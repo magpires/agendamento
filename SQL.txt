@@ -1,0 +1,4 @@
+SELECT *
+FROM `eventos`
+JOIN users as users1 ON eventos.id_orientador=users1.id
+JOIN users as users2 ON eventos.id_aluno=users2.id
