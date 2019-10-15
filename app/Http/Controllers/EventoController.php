@@ -318,13 +318,14 @@ class EventoController extends Controller
             if(Auth::user()->disciplina == 'TCC II') {
                 $orientador = User::find(Auth::user()->id_orientador);
                 $id = $orientador->id;
+                return view('home', compact('eventos', 'orientador', 'orientadores', 'selecionou_prof'));
             }
 
             //Informamos que o professor não foi selecionado para que então
             //o modal de cadastro de horário disponível não seja exibido
             $selecionou_prof = false;
 
-            return view('home', compact('eventos', 'orientador', 'orientadores', 'selecionou_prof'));
+            return view('home', compact('eventos', 'orientadores', 'selecionou_prof'));
         }
 
         if (Auth::user()->tipo == 'Orientador') {
