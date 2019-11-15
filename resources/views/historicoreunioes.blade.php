@@ -32,8 +32,15 @@
                             - Acompanhe o histórico de todas as reuniões cadastradas no sistema.<br>
                         </div>
                     @else
-                        <div class="alert alert-primary col-md-10 offset-1">
-                            - Acompanhe o histórico de todas as reuniões cadastradas em seu calendário.<br>
+                    <div class="alert alert-primary col-md-10 offset-1" role="alert">
+                            <h5>Este é seu calendário</h5>
+                            <p> - Selecione uma das reuniões no calendário para 
+                                                    obter mais detalhes sobre o evento.<br>
+
+                                                    - Você pode editar ou cancelar uma reunião logo após selecioná-la.<br>
+                                                    - Para criar uma nova reunião, clique <a href="#">aqui</a> ou na guia "Calendário de Professores" 
+                                                    na barra de navegação que fica na parte superior do site.
+                            </p>
                         </div>
                     @endif
                     
