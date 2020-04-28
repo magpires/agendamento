@@ -1,2 +1,0 @@
-Eu sou um arquivo editado
-Voltei pro unstaging, pois fui editado novamente, antes do Commit
